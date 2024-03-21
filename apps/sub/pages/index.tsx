@@ -22,8 +22,8 @@ export default function Home({ message }: InferGetStaticPropsType<typeof getStat
           Welcome to Sub Page! (basePath: /sub)
         </h2>
         <p>getStaticProps message: {message}</p>
-        <Link href="/sub">
-          Link to sub
+        <Link href="/my">
+          Link to my page
         </Link>
       </main>
     </>
