@@ -1,0 +1,17 @@
+{
+  "root": true,
+  "extends": [
+    "next",
+    "prettier",
+    "plugin:@next/next/recommended"
+  ],
+  "settings": {
+    "react": {
+      "version": "detect"
+    },
+    "next": {
+      "rootDir": "apps/*/"
+    }
+  },
+  "ignorePatterns": ["node_modules/", ".next/", "public/"]
+}
