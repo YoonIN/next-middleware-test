@@ -1,10 +1,8 @@
 import Head from "next/head";
-import { Inter } from "next/font/google";
-import styles from "@/styles/Home.module.css";
+import Link from "next/link";
+import styles from "@/styles/Main.module.css";
 import type { InferGetStaticPropsType, GetStaticProps } from 'next'
-import Link from 'next/link'
 
-const inter = Inter({ subsets: ["latin"] });
 
 interface HomeProps {
   message: string;
@@ -19,18 +17,14 @@ export default function Home({ message }: InferGetStaticPropsType<typeof getStat
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <main className={`${styles.main} ${inter.className}`}>
-        <div className={styles.description}>
-          Home (Sub)
-          <br/>
-          <Link href="/my">
-            Link to My Page
-          </Link>
-        </div>
-
-        <p>
-          {message}
-        </p>
+      <main className={styles.main}>
+        <h2>
+          Welcome to Sub Page! (basePath: /sub)
+        </h2>
+        <p>getStaticProps message: {message}</p>
+        <Link href="/sub">
+          Link to sub
+        </Link>
       </main>
     </>
   );

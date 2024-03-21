@@ -10,14 +10,14 @@
         "apps/*"
     ],
     "dependencies": {
-        "next": "14.2.0-canary.34",
+        "next": "canary",
         "react": "^18",
         "react-dom": "^18"
     },
     "devDependencies": {
-        "@next/eslint-plugin-next": "14.2.0-canary.34",
+        "@next/eslint-plugin-next": "canary",
         "eslint": "^8",
-        "eslint-config-next": "14.2.0-canary.34",
+        "eslint-config-next": "canary",
         "eslint-config-prettier": "9.1.0",
         "main": "workspace:*",
         "prettier": "3.2.5",
