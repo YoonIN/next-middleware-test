@@ -6,10 +6,12 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "build:prod": "NODE_ENV=production next build && tsc --project tsconfig.json"
   },
   "dependencies": {
-    "next": "canary",
+    "@sentry/nextjs": "^7.105.0",
+    "next": "13.4.12",
     "react": "^18",
     "react-dom": "^18"
   },
