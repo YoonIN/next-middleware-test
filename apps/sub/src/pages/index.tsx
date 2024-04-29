@@ -8,8 +8,8 @@ interface HomeProps {
   message: string;
 }
 
-Sentry.captureException(new Error("Access Token not found in main2"));
-Sentry.captureMessage("Access Token not found in main2", {
+Sentry.captureException(new Error("Cause Error in sub"));
+Sentry.captureMessage("Cause Error in sub", {
   level: "error",
 });
 

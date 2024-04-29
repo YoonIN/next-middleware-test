@@ -12,12 +12,8 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <main className={styles.main}>
-        <h2>
-          Welcome to Main Page!
-        </h2>
-        <Link href="/sub">
-          Link to sub
-        </Link>
+        <h2>Welcome to Main Page!</h2>
+        <Link href="/sub">Link to sub</Link>
       </main>
     </>
   );
