@@ -2,16 +2,10 @@ import Head from "next/head";
 import Link from "next/link";
 import styles from "@/styles/Main.module.css";
 import type { InferGetStaticPropsType, GetStaticProps } from "next";
-import * as Sentry from "@sentry/nextjs";
 
 interface HomeProps {
   message: string;
 }
-
-Sentry.captureException(new Error("Cause Error in sub"));
-Sentry.captureMessage("Cause Error in sub", {
-  level: "error",
-});
 
 export default function Home({
   message,
